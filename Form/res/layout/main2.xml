@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="New Hip Score Forms"
+              android:textSize="50dp"
+              android:textStyle="bold"
+              android:textIsSelectable="false"
+              ></TextView>
+    
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Patient Consent"
+            android:id="@+id/patientbutton"
+            ></Button>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EQ5d and IHOT12"    
+            android:id="@+id/questionnairebutton"
+            ></Button>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harris Hip Score"    
+            android:id="@+id/harrishipbutton"
+            ></Button>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non Arthopplasty hip score"    
+            android:id="@+id/nonarthoplastybutton"
+            ></Button>
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hoos hip Score"    
+            android:id="@+id/hooshipbutton"
+            ></Button>
+    <Button android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Exit"
+            android:id="@+id/mainexit"></Button>"
+
+</LinearLayout>

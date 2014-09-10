@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="100">
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_weight="90">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:text="Please use the selector below to mark answers to the questions."
+    android:id="@+id/ihottitle"></TextView>
+
+<TextView 
+    android:id="@+id/ihotq1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1. Overall how much pain do you have in your hip/groin?"
+    android:layout_below="@id/ihottitle"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq1seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq1"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq1hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - No pain at all, 100 - Extreme Pain"
+    android:layout_below="@id/ihotq1seek"
+    android:paddingTop="2dp"
+    >
+    
+</TextView>
+<TextView 
+    android:id="@+id/ihotq2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2. How difﬁcult is it for you to get up and down off the ﬂoor/ground?"
+    android:layout_below="@id/ihotq1hint"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq2seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq2"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq2hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - No Difficulty at all, 100 - Extreme Difficulty"
+    android:layout_below="@id/ihotq2seek"
+    android:paddingTop="2dp"
+    >
+    
+</TextView>
+
+<TextView 
+    android:id="@+id/ihotq3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="3. How difﬁcult is it for you to walk long distances?"
+    android:layout_below="@id/ihotq2hint"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq3seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq3"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq3hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - No Difficulty at all, 100 - Extreme Difficulty"
+    android:layout_below="@id/ihotq3seek"
+    android:paddingTop="2dp"
+    >
+    
+</TextView>
+<TextView 
+    android:id="@+id/ihotq4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="4. How much trouble do you have with grinding, catching or clicking in your hip?"
+    android:layout_below="@id/ihotq3hint"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq4seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq4"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq4hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - No Trouble at all, 100 - Severe Trouble"
+    android:layout_below="@id/ihotq4seek"
+    android:paddingTop="2dp"
+    >
+    
+</TextView>
+
+<TextView 
+    android:id="@+id/ihotq5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="5. How much trouble do you have pushing, pulling, lifting or carrying heavy objects at work?"
+    android:layout_below="@id/ihotq4hint"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq5seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq5"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq5hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - No Trouble at all, 100 - Severe Trouble"
+    android:layout_below="@id/ihotq5seek"
+    android:paddingTop="2dp"
+    >
+    
+</TextView>
+    
+<TextView 
+    android:id="@+id/ihotq6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="6. How concerned are you about cutting/changing directions during your sporting or 
+ recreational activities?"
+    android:layout_below="@id/ihotq5hint"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq6seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq6"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq6hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - No Concern at all, 100 - Extreme Concern"
+    android:layout_below="@id/ihotq6seek"
+    android:paddingTop="2dp"
+    >    
+</TextView>
+
+<TextView 
+    android:id="@+id/ihotq7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="7. How much pain do you experience in you hip after activity?"
+    android:layout_below="@id/ihotq6hint"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq7seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq7"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq7hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - No Pain at all, 100 - Extreme Pain"
+    android:layout_below="@id/ihotq7seek"
+    android:paddingTop="2dp"
+    >    
+</TextView>
+
+<TextView 
+    android:id="@+id/ihotq8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="8. How concerned are you about picking up or carrying children because of your hip?"
+    android:layout_below="@id/ihotq7hint"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq8seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq8"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq8hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - No Concern at all, 100 - Extreme Concern"
+    android:layout_below="@id/ihotq8seek"
+    android:paddingTop="2dp"
+    >    
+</TextView>
+
+<LinearLayout android:id="@+id/ihotq9"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:weightSum="100"
+              android:layout_below="@id/ihotq8hint"
+              android:orientation="horizontal">
+    <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="9. How much trouble do you have with sexual activity because of your hip?"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp"
+    android:layout_weight="70"></TextView>
+    <CheckBox android:id="@+id/ihotq9check"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_weight="30"
+              android:text="N/A"
+        ></CheckBox>
+    
+</LinearLayout>"
+
+<SeekBar
+    android:id="@+id/ihotq9seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq9"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq9hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - No Trouble at all, 100 - Severe Trouble"
+    android:layout_below="@id/ihotq9seek"
+    android:paddingTop="2dp"
+    >    
+</TextView>
+
+<TextView 
+    android:id="@+id/ihotq10"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="10. How much of the time are you aware of the disability in your hip?"
+    android:layout_below="@id/ihotq9hint"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq10seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq10"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq10hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - Not Aware at all, 100 - Constantly Aware"
+    android:layout_below="@id/ihotq10seek"
+    android:paddingTop="2dp"
+    >    
+</TextView>
+
+<TextView 
+    android:id="@+id/ihotq11"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="11. How concerned are you about your ability to maintain your desired ﬁtness level?"
+    android:layout_below="@id/ihotq10hint"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq11seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq11"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq11hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - Not Concern at all, 100 - Extreme Concern"
+    android:layout_below="@id/ihotq11seek"
+    android:paddingTop="2dp"
+    >    
+</TextView>
+
+<TextView 
+    android:id="@+id/ihotq12"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="12. How much of a distraction is your hip problem?"
+    android:layout_below="@id/ihotq11hint"
+    android:paddingTop="6dp"
+    android:paddingBottom="2dp">
+    
+</TextView>
+<SeekBar
+    android:id="@+id/ihotq12seek"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/ihotq12"
+    android:max="100"
+    
+    ></SeekBar>
+<TextView 
+    android:id="@+id/ihotq12hint"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="0 - Not Distracted at all, 100 - Extremely Distracted"
+    android:layout_below="@id/ihotq12seek"
+    android:paddingTop="2dp"
+    >    
+</TextView>
+
+</RelativeLayout>
+    
+</ScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="10"
+    android:gravity="bottom"
+    android:weightSum="100">
+ <Button
+      android:gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Cancel"
+      android:layout_weight="50"
+      android:id="@+id/ihotcancel"
+      ></Button> 
+<Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Save"
+      android:id="@+id/ihotsave"
+      android:layout_weight="50"
+      android:gravity="center"
+      ></Button>
+
+ 
+    
+    
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical">
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="80">
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<TextView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Modified Harris Hip Score to be filled by the patient"
+    android:paddingLeft="3dp"
+    android:paddingBottom="3dp"
+    android:paddingTop="3dp"
+    android:id="@+id/harrishiptitle"></TextView>
+<LinearLayout 
+    android:id="@+id/harrislinear1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:orientation="horizontal"
+    android:layout_below="@id/harrishiptitle"
+    >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Patient Name"
+        android:layout_weight="40"></TextView>
+    <EditText android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:id="@+id/harrisnameedit"
+        android:layout_weight="60"></EditText>"
+</LinearLayout>
+<LinearLayout 
+    android:id="@+id/harrislinear2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:orientation="horizontal"
+    android:layout_below="@id/harrislinear1"
+    >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Date Of Birth"
+        android:layout_weight="40"></TextView>
+    <EditText android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:id="@+id/harrisdobedit"
+        android:layout_weight="60"></EditText>
+</LinearLayout>
+<LinearLayout 
+    android:id="@+id/harrislinear3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:orientation="horizontal"
+    android:layout_below="@id/harrislinear2"
+    >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="NHS number"
+        android:layout_weight="40"></TextView>
+    <EditText android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/harrisnhsedit"
+        android:layout_weight="60"></EditText>
+</LinearLayout>
+<TextView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Please Answer the following questions pertaining to your hip in the past 4 years" 
+    android:layout_below="@id/harrislinear3"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:id="@+id/harrishiptitle2"/>
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="How severe has the pain been that you experienced in your hip?" 
+    android:layout_below="@id/harrishiptitle2"
+    android:id="@+id/harrishipq1"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    ></TextView>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Totally disabling or crippling"
+    android:id="@+id/harrishipq1c1"
+    android:layout_below="@id/harrishipq1"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Marked pain from hip"
+    android:id="@+id/harrishipq1c2"
+    android:layout_below="@id/harrishipq1c1"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Moderate pain from hip resulting in limitations of ordinary work activity"
+    android:id="@+id/harrishipq1c3"
+    android:layout_below="@id/harrishipq1c2"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Mild pain from hip with no effect on average activities"
+    android:id="@+id/harrishipq1c4"
+    android:layout_below="@id/harrishipq1c3"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Slight or occasional pain from hip"
+    android:id="@+id/harrishipq1c5"
+    android:layout_below="@id/harrishipq1c4"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="No pain from hip"
+    android:id="@+id/harrishipq1c6"
+    android:layout_below="@id/harrishipq1c5"
+    ></CheckBox>
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Have you walked with a limp?" 
+    android:layout_below="@id/harrishipq1c6"
+    android:id="@+id/harrishipq2"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    ></TextView>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Severe limp or unable to walk"
+    android:id="@+id/harrishipq2c1"
+    android:layout_below="@id/harrishipq2"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Moderate limp"
+    android:id="@+id/harrishipq2c2"
+    android:layout_below="@id/harrishipq2c1"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Slight limp"
+    android:id="@+id/harrishipq2c3"
+    android:layout_below="@id/harrishipq2c2"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="None"
+    android:id="@+id/harrishipq2c4"
+    android:layout_below="@id/harrishipq2c3"
+    ></CheckBox>
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Have you required support while walking on the flat?" 
+    android:layout_below="@id/harrishipq2c4"
+    android:id="@+id/harrishipq3"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    ></TextView>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Two crutches or not able to walk"
+    android:id="@+id/harrishipq3c1"
+    android:layout_below="@id/harrishipq3"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Two canes"
+    android:id="@+id/harrishipq3c2"
+    android:layout_below="@id/harrishipq3c1"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="One crutch"
+    android:id="@+id/harrishipq3c3"
+    android:layout_below="@id/harrishipq3c2"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Cane most of the time"
+    android:id="@+id/harrishipq3c4"
+    android:layout_below="@id/harrishipq3c3"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Cane for long walks"
+    android:id="@+id/harrishipq3c5"
+    android:layout_below="@id/harrishipq3c4"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="None"
+    android:id="@+id/harrishipq3c6"
+    android:layout_below="@id/harrishipq3c5"
+    ></CheckBox>
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Have far could you walk?" 
+    android:layout_below="@id/harrishipq3c6"
+    android:id="@+id/harrishipq4"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    ></TextView>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="From bed to chair"
+    android:id="@+id/harrishipq4c1"
+    android:layout_below="@id/harrishipq4"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Only been able to walk indoors"
+    android:id="@+id/harrishipq4c2"
+    android:layout_below="@id/harrishipq4c1"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="300 - 500 metres"
+    android:id="@+id/harrishipq4c3"
+    android:layout_below="@id/harrishipq4c2"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Approximately 1 km"
+    android:id="@+id/harrishipq4c4"
+    android:layout_below="@id/harrishipq4c3"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Unlimited"
+    android:id="@+id/harrishipq4c5"
+    android:layout_below="@id/harrishipq4c4"
+    ></CheckBox>
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Have you been able to climb stairs?" 
+    android:layout_below="@id/harrishipq4c5"
+    android:id="@+id/harrishipq5"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    ></TextView>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Unable"
+    android:id="@+id/harrishipq5c1"
+    android:layout_below="@id/harrishipq5"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Yes - But not normally"
+    android:id="@+id/harrishipq5c2"
+    android:layout_below="@id/harrishipq5c1"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Yes - Using banister/railing"
+    android:id="@+id/harrishipq5c3"
+    android:layout_below="@id/harrishipq5c2"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Normally"
+    android:id="@+id/harrishipq5c4"
+    android:layout_below="@id/harrishipq5c3"
+    ></CheckBox>
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Have you been able to put your shoes/socks on and tie the laces?" 
+    android:layout_below="@id/harrishipq5c4"
+    android:id="@+id/harrishipq6"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    ></TextView>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Unable"
+    android:id="@+id/harrishipq6c1"
+    android:layout_below="@id/harrishipq6"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="With difficulty"
+    android:id="@+id/harrishipq6c2"
+    android:layout_below="@id/harrishipq6c1"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="With ease"
+    android:id="@+id/harrishipq6c3"
+    android:layout_below="@id/harrishipq6c2"
+    ></CheckBox>
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Have you been able to sit in a chair comfortably for up to 30 minutes?" 
+    android:layout_below="@id/harrishipq6c3"
+    android:id="@+id/harrishipq7"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    ></TextView>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Unable in any chair"
+    android:id="@+id/harrishipq7c1"
+    android:layout_below="@id/harrishipq7"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Able - High chair for 30 minutes"
+    android:id="@+id/harrishipq7c2"
+    android:layout_below="@id/harrishipq7c1"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Able to sit in an ordinary chair for one hour"
+    android:id="@+id/harrishipq7c3"
+    android:layout_below="@id/harrishipq7c2"
+    ></CheckBox>
+<TextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Have you been able to use public transportation(bus)?" 
+    android:layout_below="@id/harrishipq7c3"
+    android:id="@+id/harrishipq8"
+    android:paddingLeft="3dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    ></TextView>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Unable"
+    android:id="@+id/harrishipq8c1"
+    android:layout_below="@id/harrishipq8"
+    ></CheckBox>
+<CheckBox  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Able"
+    android:id="@+id/harrishipq8c2"
+    android:layout_below="@id/harrishipq8c1"
+    ></CheckBox>
+</RelativeLayout>
+</ScrollView>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:layout_weight="20"
+    android:orientation="horizontal">
+    <Button 
+         android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="50"
+    android:text="Cancel"
+    android:id="@+id/harrishipcancel"></Button>
+     <Button 
+         android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="50"
+    android:text="Save"
+    android:id="@+id/harrishipsave"></Button>"
+</LinearLayout>
+</LinearLayout>

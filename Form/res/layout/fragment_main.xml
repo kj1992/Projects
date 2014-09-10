@@ -1,0 +1,313 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.form.MainActivity$PlaceholderFragment" >
+   <ScrollView android:id="@+id/SV1"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+               > 
+    <RelativeLayout android:layout_width="fill_parent" 
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+               >
+    
+    <RelativeLayout android:id="@+id/RL1"
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="horizontal"
+         
+              >
+        <TextView android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:text="Patient Consent Forms"
+              android:layout_centerInParent="true"></TextView>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/RL2"
+              android:layout_below="@id/RL1" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="horizontal"
+              android:weightSum="100"            
+              >
+
+              <TextView
+                  android:id="@+id/surnametextview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="Surname" 
+                  android:gravity="center_vertical"
+                  android:layout_weight="25"
+                 >
+</TextView>
+
+              <EditText
+                  android:id="@+id/surnameedittext"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_toRightOf="@id/surnametextview"
+                  android:inputType="text"
+                  android:layout_weight="75"
+                  android:hint="Surname"
+                   />
+        
+    </LinearLayout>
+     <LinearLayout android:id="@+id/RL3"
+              android:layout_below="@id/RL2" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="horizontal"
+              android:weightSum="100"
+              >
+
+              <TextView
+                  android:id="@+id/forenametextview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="Forename" 
+                  android:gravity="center_vertical"
+                  android:layout_weight="25"
+                  >
+</TextView>
+
+              <EditText
+                  android:id="@+id/forenameedittext"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  
+                  android:inputType="text"
+                  android:hint="Forename"
+                  android:layout_weight="75"
+                   />
+        
+    </LinearLayout>
+    
+          <LinearLayout android:id="@+id/RL4"
+              android:layout_below="@id/RL3" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="vertical"
+              android:weightSum="100"
+              >
+
+              <TextView
+                  android:id="@+id/DOBtextview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="Date Of Birth" 
+                  android:gravity="center_vertical"
+                  android:layout_weight="15"
+                  >
+</TextView>
+
+<DatePicker 
+                  
+                  android:id="@+id/DOBpicker"
+                  android:layout_width="fill_parent"
+                  android:layout_height="match_parent" 
+                  android:calendarViewShown="false"
+                  android:layout_weight="85"
+                  />
+
+        
+    </LinearLayout>
+        <LinearLayout android:id="@+id/RL5"
+              android:layout_below="@id/RL4" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="horizontal"
+              android:weightSum="100"
+              >
+
+              <TextView
+                  android:id="@+id/emailtextview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="E-mail address" 
+                  android:gravity="center_vertical"
+                  android:layout_weight="15"
+                  >
+</TextView>
+
+              <EditText
+                  android:id="@+id/emailedittext"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:inputType="textEmailAddress"
+                  android:hint="E-mail"
+                  android:layout_weight="85"
+                   />
+        
+    </LinearLayout>
+         <LinearLayout android:id="@+id/RL6"
+              android:layout_below="@id/RL5" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="horizontal"
+              android:weightSum="100"
+              >
+
+              <TextView
+                  android:id="@+id/homeaddresstextview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="Home address" 
+                  android:gravity="center_vertical"
+                  android:layout_weight="15"
+                  >
+</TextView>
+
+              <EditText
+                  android:id="@+id/homeedittext"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:inputType="textPostalAddress"
+                  android:hint="Home"
+                  android:layout_weight="85"
+                   />
+        
+    </LinearLayout>
+           <LinearLayout android:id="@+id/RL7"
+              android:layout_below="@id/RL6" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="horizontal"
+              android:weightSum="100"
+              >
+
+              <TextView
+                  android:id="@+id/postcodetextview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="Post Code" 
+                  android:gravity="center_vertical"
+                  android:layout_weight="25"
+                  >
+</TextView>
+
+              <EditText
+                  android:id="@+id/postedittext"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:inputType="number"
+                  android:hint="Postal Code"
+                  android:layout_weight="75"
+                   />
+        
+    </LinearLayout>
+    
+     <LinearLayout android:id="@+id/RL8"
+              android:layout_below="@id/RL7" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="horizontal"
+              android:weightSum="100"
+              >
+<CheckBox         android:id="@+id/consentchoeckbox"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="15"
+                  android:gravity="top"></CheckBox>
+  
+            <TextView
+                  android:id="@+id/consenttextview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="I CONSENT to my personal details being recorded within the NAHR. I understand 
+that my personal data will not be released unless required by law or where there is a 
+clear overriding public interest in disclosure. However, where possible, I will be told if 
+any disclosure is to take place." 
+                  
+                  android:layout_weight="85"
+                  >
+</TextView>
+        
+    </LinearLayout>
+    <LinearLayout android:id="@+id/RL9"
+              android:layout_below="@id/RL8" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="horizontal"
+              android:weightSum="100"
+              >
+
+              <TextView
+                  android:id="@+id/signaturetextview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="Signature" 
+                  android:gravity="center_vertical"
+                  android:layout_weight="25"
+                  >
+</TextView>
+
+              <EditText
+                  android:id="@+id/signatureedittext"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:inputType="text"
+                  android:hint="Signature"
+                  android:layout_weight="75"
+                   />
+        
+    </LinearLayout>
+     <LinearLayout android:id="@+id/RL10"
+              android:layout_below="@id/RL9" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:orientation="horizontal"
+              android:weightSum="100"
+              >
+
+              <TextView
+                  android:id="@+id/datetextview"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:text="Date(MM/DD/YY)" 
+                  android:gravity="center_vertical"
+                  android:layout_weight="25"
+                  >
+</TextView>
+
+              <EditText
+                  android:id="@+id/dateedittext"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:inputType="date"
+                  android:hint="Date of Signing"
+                  android:layout_weight="75"
+                   />
+        
+    </LinearLayout>
+    <LinearLayout android:id="@+id/BTNRL"
+                android:layout_below="@id/RL10"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                >
+   
+         <Button     
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:id="@+id/Cancelbtn"
+                android:layout_weight="50">
+                       </Button>
+        <Button android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Save"
+                android:id="@+id/Savebtn"
+                android:layout_weight="50"/>
+   
+</LinearLayout>
+
+</RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
