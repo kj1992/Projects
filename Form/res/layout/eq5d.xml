@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="I have no problems in walking about"
+        android:textSize="15dp"
        >
         
     </CheckBox>
@@ -49,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have slight problems in walking about"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -59,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have moderate problems in walking about"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -69,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have severe problems in walking about"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -79,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I am unable to walk about"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -100,7 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have no problems washing or dressing myself"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -110,7 +111,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have slight problems washing or dressing myself"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -120,7 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have moderate problems washing or dressing myself"
-       >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -130,7 +131,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have severe problems washing or dressing myself"
-       >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -140,7 +141,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I am unable to wash or dress myself"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
 
@@ -161,7 +162,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have no problems doing my usual activities"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -171,7 +172,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have slight problems doing my usual activities"
-       >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -181,7 +182,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have moderate problems doing my usual activities"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -191,7 +192,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have severe problems doing my usual activities"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -201,7 +202,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I am unable to do my usual activities"
-       >
+        android:textSize="15dp">
         
     </CheckBox>
  
@@ -222,7 +223,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have no pain or discomfort"
-       >
+       android:textSize="15dp">
         
     </CheckBox>
     
@@ -232,7 +233,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have slight pain or discomfort"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -242,7 +243,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have moderate pain or discomfort"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -252,7 +253,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have severe pain or discomfort"
-       >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -262,7 +263,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I have extreme pain or discomfort"
-        >
+        android:textSize="15dp">
         
     </CheckBox>  
     
@@ -283,7 +284,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I am not anxious or depressed "
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -293,7 +294,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I am slightly anxious or depressed"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -303,7 +304,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I am moderately anxious or depressed"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -313,7 +314,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I am severely anxious or depressed"
-        >
+        android:textSize="15dp">
         
     </CheckBox>
     
@@ -323,7 +324,7 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="I am extremely anxious or depressed"
-        >
+        android:textSize="15dp">
         
     </CheckBox>  
     
